@@ -14,7 +14,7 @@ document.getElementById('login').addEventListener('click', function() {
             icon: 'success',
             confirmButtonText: 'OK'
         }).then(() => {
-            window.location.href =  '../page3/blank.html'; // Redirect to blank page
+            window.location.href =  '../blank/blank.html'; // Redirect to blank page
         });
     } else {
         Swal.fire({
@@ -63,6 +63,6 @@ document.getElementById('register').addEventListener('click', function() {
         icon: 'success',
         confirmButtonText: 'OK'
     }).then(() => {
-        window.location.href = '../page1/index.html'; // Redirect to login page
+        window.location.href = 'index.html'; // Redirect to login page
     });
 });
