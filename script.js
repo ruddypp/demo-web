@@ -1,15 +1,18 @@
+// Function to get user data from localStorage
 function getUser() {
     return JSON.parse(localStorage.getItem('user'));
 }
 
+// Function to save user data to localStorage
 function saveUser(username, password) {
     const user = { username, password };
     localStorage.setItem('user', JSON.stringify(user));
 }
 
 // Login functionality
-if (document.getElementById('login')) {
-    document.getElementById('login').addEventListener('click', function() {
+const loginButton = document.getElementById('login');
+if (loginButton) {
+    loginButton.addEventListener('click', function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const user = getUser();
@@ -21,7 +24,7 @@ if (document.getElementById('login')) {
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then(() => {
-                window.location.href =  '../blank/blank.html'; // Redirect to blank page
+                window.location.href = 'blank/blank.html'; // Redirect to blank page
             });
         } else {
             Swal.fire({
@@ -35,8 +38,9 @@ if (document.getElementById('login')) {
 }
 
 // Register functionality
-if (document.getElementById('register')) {
-    document.getElementById('register').addEventListener('click', function() {
+const registerButton = document.getElementById('register');
+if (registerButton) {
+    registerButton.addEventListener('click', function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
