@@ -72,7 +72,7 @@ if (registerButton) {
             icon: 'success',
             confirmButtonText: 'OK'
         }).then(() => {
-            window.location.href = './login/index.html'; // Redirect to login page
+            window.location.href = '../login/index.html'; // Redirect to login page
         });
     });
 }
