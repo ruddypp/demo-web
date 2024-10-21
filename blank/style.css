@@ -1,0 +1,257 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0E6FF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #FFF9F0;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo span {
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #E5F4FF;
+}
+
+
+.login-btn {
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-primary::after {
+    content: '→';
+    margin-left: 10px;
+}
+
+.hero-image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.person-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.services {
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.scrolling-tabs {
+    display: flex;
+    gap: 15px;
+    animation: scroll 20s linear infinite;
+}
+
+.scrolling-tabs span {
+    padding: 10px 20px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f0e8; /* Warna latar belakang sesuai dengan gambar */
+  }
+  
+  .info-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .info-box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .info-box p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  
+  .info-box:nth-child(1) {
+    background-color: #d7f3e3; /* Warna hijau muda */
+  }
+  
+  .info-box:nth-child(2) {
+    background-color: #f7d7e3; /* Warna merah muda */
+  }
+  
+  .info-box:nth-child(3) {
+    background-color: #d7e5f7; /* Warna biru muda */
+  }
+
+  section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about-section {
+    background-color: #E5FFF2;
+}
+
+.services-section {
+    background-color: #FFF5E5;
+}
+
+.blog-section {
+    background-color: #F0E6FF;
+}
+
+.contact-section {
+    background-color: #FFE8E8;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.info-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .info-boxes {
+        flex-direction: column;
+    }
+}

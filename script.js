@@ -24,7 +24,7 @@ if (loginButton) {
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then(() => {
-                window.location.href = 'blank/blank.html'; // Redirect to blank page
+                window.location.href = '../blank/blank.html'; // Redirect to blank page
             });
         } else {
             Swal.fire({
@@ -72,7 +72,7 @@ if (registerButton) {
             icon: 'success',
             confirmButtonText: 'OK'
         }).then(() => {
-            window.location.href = '../index.html'; // Redirect to login page
+            window.location.href = './login/index.html'; // Redirect to login page
         });
     });
 }

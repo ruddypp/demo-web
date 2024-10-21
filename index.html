@@ -3,26 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Register</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0E6FF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #FFF9F0;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Menempatkan logo di kiri dan tombol login di kanan */
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo span {
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.login-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-primary::after {
+    content: '→';
+    margin-left: 10px;
+}
+
+.hero-image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.person-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="card sign-in">
-            <h2>Sign in</h2>
-            <input type="text" id="username" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <button class="btn" id="login">Sign in</button>
-            <p class="mobile-text">Don't have an account? <a href="regis/register.html" class="mobile-link">Sign up</a></p>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <!-- Menampilkan logo di sebelah kiri -->
+                <div class="logo">PKM<span>SMK AL-HIDAYAT</span></div>
+                <!-- Menampilkan tombol login di sebelah kanan -->
+                <a class="login-btn" href="./login/index.html">Login</a>
+            </div>
         </div>
-        <div class="card hello-friend">
-            <h2>Hello, Friend!</h2>
-            <p>Enter your personal details and start journey with us</p>
-            <a href="regis/register.html" class="btn btn-secondary">Sign up</a>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>See what's in it for you</h1>
+            <p>Since 2005, we've been giving advice to people around</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Discover Now</a>
+                <a href="#" class="btn btn-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                    </svg>
+                    Watch Video
+                </a>
+            </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js"></script>
+        <div class="hero-image">
+            <img src="../blank/5757453.jpg" alt="Person" class="person-img">
+        </div>
+    </section>
+    
 </body>
 </html>
